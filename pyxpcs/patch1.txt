@@ -1,8 +1,0 @@
-26c26,30
-< from matplotlib.nxutils import points_inside_poly
----
-> import matplotlib
-> #from matplotlib.nxutils import points_inside_poly
-> from matplotlib.path import Path
-> from matplotlib.widgets import Cursor, Button
-> import matplotlib.pyplot as plt
