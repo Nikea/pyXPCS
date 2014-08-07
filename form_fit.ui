@@ -1,0 +1,402 @@
+<!DOCTYPE UI><UI version="3.3" stdsetdef="1">
+<class>Form1</class>
+<widget class="QMainWindow">
+    <property name="name">
+        <cstring>Form1</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>712</width>
+            <height>307</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>PYFIT version 1.0</string>
+    </property>
+    <grid>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <widget class="QSplitter" row="0" column="0">
+            <property name="name">
+                <cstring>splitter2</cstring>
+            </property>
+            <property name="orientation">
+                <enum>Horizontal</enum>
+            </property>
+            <widget class="QLabel">
+                <property name="name">
+                    <cstring>textLabel_input</cstring>
+                </property>
+                <property name="text">
+                    <string>Input file:</string>
+                </property>
+            </widget>
+            <widget class="QLineEdit">
+                <property name="name">
+                    <cstring>lineEdit_input</cstring>
+                </property>
+                <property name="maximumSize">
+                    <size>
+                        <width>32767</width>
+                        <height>20</height>
+                    </size>
+                </property>
+                <property name="text">
+                    <string>input_fit.txt</string>
+                </property>
+            </widget>
+        </widget>
+        <widget class="QTextEdit" row="1" column="0" rowspan="1" colspan="2">
+            <property name="name">
+                <cstring>textEdit_input</cstring>
+            </property>
+            <property name="text">
+                <string>file=./InputFiles/ferrofluids/220KB-horiz_cf.dat
+xcol=1
+ycol=2
+normcol=none
+yerr=none
+range=in   #(in/out/all)
+T1=1e-3
+T2=1e2
+f(x)=p0*exp(-2*(p1*x)**p2)+c0
+p2=beta, 1
+p0=contrast, .08
+p1=gamma, 1
+c0=baseline, 1
+</string>
+            </property>
+            <property name="wordWrap">
+                <enum>WidgetWidth</enum>
+            </property>
+        </widget>
+        <widget class="QSplitter" row="4" column="0" rowspan="1" colspan="2">
+            <property name="name">
+                <cstring>splitter8</cstring>
+            </property>
+            <property name="orientation">
+                <enum>Horizontal</enum>
+            </property>
+            <widget class="QLayoutWidget">
+                <property name="name">
+                    <cstring>layout5</cstring>
+                </property>
+                <hbox>
+                    <property name="name">
+                        <cstring>unnamed</cstring>
+                    </property>
+                    <widget class="QSplitter">
+                        <property name="name">
+                            <cstring>splitter6</cstring>
+                        </property>
+                        <property name="orientation">
+                            <enum>Horizontal</enum>
+                        </property>
+                        <widget class="QLabel">
+                            <property name="name">
+                                <cstring>textLabel_filepars</cstring>
+                            </property>
+                            <property name="maximumSize">
+                                <size>
+                                    <width>50</width>
+                                    <height>32767</height>
+                                </size>
+                            </property>
+                            <property name="text">
+                                <string>file pars:</string>
+                            </property>
+                        </widget>
+                        <widget class="QLineEdit">
+                            <property name="name">
+                                <cstring>lineEdit_filepars</cstring>
+                            </property>
+                            <property name="enabled">
+                                <bool>false</bool>
+                            </property>
+                            <property name="maximumSize">
+                                <size>
+                                    <width>32767</width>
+                                    <height>20</height>
+                                </size>
+                            </property>
+                            <property name="paletteForegroundColor">
+                                <color>
+                                    <red>240</red>
+                                    <green>22</green>
+                                    <blue>25</blue>
+                                </color>
+                            </property>
+                        </widget>
+                    </widget>
+                    <widget class="QSplitter">
+                        <property name="name">
+                            <cstring>splitter5</cstring>
+                        </property>
+                        <property name="orientation">
+                            <enum>Horizontal</enum>
+                        </property>
+                        <widget class="QLabel">
+                            <property name="name">
+                                <cstring>textLabel_filefit</cstring>
+                            </property>
+                            <property name="maximumSize">
+                                <size>
+                                    <width>50</width>
+                                    <height>32767</height>
+                                </size>
+                            </property>
+                            <property name="text">
+                                <string>files fit:</string>
+                            </property>
+                        </widget>
+                        <widget class="QLineEdit">
+                            <property name="name">
+                                <cstring>lineEdit_filefit</cstring>
+                            </property>
+                            <property name="enabled">
+                                <bool>false</bool>
+                            </property>
+                            <property name="maximumSize">
+                                <size>
+                                    <width>32767</width>
+                                    <height>20</height>
+                                </size>
+                            </property>
+                        </widget>
+                    </widget>
+                </hbox>
+            </widget>
+            <widget class="QPushButton">
+                <property name="name">
+                    <cstring>pushButton_start</cstring>
+                </property>
+                <property name="maximumSize">
+                    <size>
+                        <width>50</width>
+                        <height>32767</height>
+                    </size>
+                </property>
+                <property name="paletteBackgroundColor">
+                    <color>
+                        <red>110</red>
+                        <green>220</green>
+                        <blue>0</blue>
+                    </color>
+                </property>
+                <property name="font">
+                    <font>
+                        <pointsize>12</pointsize>
+                        <bold>1</bold>
+                    </font>
+                </property>
+                <property name="text">
+                    <string>S&amp;tart</string>
+                </property>
+                <property name="accel">
+                    <string>Alt+T</string>
+                </property>
+                <property name="flat">
+                    <bool>false</bool>
+                </property>
+            </widget>
+        </widget>
+        <widget class="QLayoutWidget" row="0" column="1">
+            <property name="name">
+                <cstring>layout3</cstring>
+            </property>
+            <hbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QPushButton">
+                    <property name="name">
+                        <cstring>pushButton_load</cstring>
+                    </property>
+                    <property name="font">
+                        <font>
+                            <pointsize>12</pointsize>
+                            <bold>1</bold>
+                        </font>
+                    </property>
+                    <property name="text">
+                        <string>&amp;LOAD</string>
+                    </property>
+                    <property name="accel">
+                        <string>Alt+L</string>
+                    </property>
+                </widget>
+                <widget class="QPushButton">
+                    <property name="name">
+                        <cstring>pushButton_save</cstring>
+                    </property>
+                    <property name="font">
+                        <font>
+                            <pointsize>12</pointsize>
+                            <bold>1</bold>
+                        </font>
+                    </property>
+                    <property name="text">
+                        <string>&amp;SAVE</string>
+                    </property>
+                    <property name="accel">
+                        <string>Alt+S</string>
+                    </property>
+                </widget>
+            </hbox>
+        </widget>
+        <widget class="QSplitter" row="2" column="0" rowspan="1" colspan="2">
+            <property name="name">
+                <cstring>splitter9</cstring>
+            </property>
+            <property name="orientation">
+                <enum>Horizontal</enum>
+            </property>
+            <widget class="QSplitter">
+                <property name="name">
+                    <cstring>splitter3</cstring>
+                </property>
+                <property name="orientation">
+                    <enum>Horizontal</enum>
+                </property>
+                <widget class="QLabel">
+                    <property name="name">
+                        <cstring>textLabel_col</cstring>
+                    </property>
+                    <property name="text">
+                        <string>Last Column</string>
+                    </property>
+                </widget>
+                <widget class="QLineEdit">
+                    <property name="name">
+                        <cstring>lineEdit_col</cstring>
+                    </property>
+                    <property name="text">
+                        <string>5</string>
+                    </property>
+                </widget>
+            </widget>
+            <widget class="QCheckBox">
+                <property name="name">
+                    <cstring>checkBox_plot</cstring>
+                </property>
+                <property name="text">
+                    <string>Plot</string>
+                </property>
+                <property name="checked">
+                    <bool>true</bool>
+                </property>
+            </widget>
+            <spacer>
+                <property name="name">
+                    <cstring>spacer1</cstring>
+                </property>
+                <property name="orientation">
+                    <enum>Horizontal</enum>
+                </property>
+                <property name="sizeType">
+                    <enum>Expanding</enum>
+                </property>
+                <property name="sizeHint">
+                    <size>
+                        <width>420</width>
+                        <height>21</height>
+                    </size>
+                </property>
+            </spacer>
+        </widget>
+        <widget class="QSplitter" row="3" column="0" rowspan="1" colspan="2">
+            <property name="name">
+                <cstring>splitter10</cstring>
+            </property>
+            <property name="orientation">
+                <enum>Horizontal</enum>
+            </property>
+            <widget class="QSplitter">
+                <property name="name">
+                    <cstring>splitter1</cstring>
+                </property>
+                <property name="orientation">
+                    <enum>Horizontal</enum>
+                </property>
+                <widget class="QLabel">
+                    <property name="name">
+                        <cstring>textLabel_outdir</cstring>
+                    </property>
+                    <property name="maximumSize">
+                        <size>
+                            <width>100</width>
+                            <height>32767</height>
+                        </size>
+                    </property>
+                    <property name="text">
+                        <string>output directory:</string>
+                    </property>
+                </widget>
+                <widget class="QLineEdit">
+                    <property name="name">
+                        <cstring>lineEdit_outdir</cstring>
+                    </property>
+                    <property name="text">
+                        <string>auto</string>
+                    </property>
+                </widget>
+            </widget>
+            <widget class="QSplitter">
+                <property name="name">
+                    <cstring>splitter4</cstring>
+                </property>
+                <property name="orientation">
+                    <enum>Horizontal</enum>
+                </property>
+                <widget class="QLabel">
+                    <property name="name">
+                        <cstring>textLabel_outpref</cstring>
+                    </property>
+                    <property name="text">
+                        <string>output prefix:</string>
+                    </property>
+                </widget>
+                <widget class="QLineEdit">
+                    <property name="name">
+                        <cstring>lineEdit_outpref</cstring>
+                    </property>
+                    <property name="text">
+                        <string>auto</string>
+                    </property>
+                </widget>
+            </widget>
+        </widget>
+    </grid>
+</widget>
+<toolbars>
+</toolbars>
+<connections>
+    <connection>
+        <sender>pushButton_load</sender>
+        <signal>pressed()</signal>
+        <receiver>Form1</receiver>
+        <slot>load_input()</slot>
+    </connection>
+    <connection>
+        <sender>pushButton_save</sender>
+        <signal>pressed()</signal>
+        <receiver>Form1</receiver>
+        <slot>save_input()</slot>
+    </connection>
+    <connection>
+        <sender>pushButton_start</sender>
+        <signal>pressed()</signal>
+        <receiver>Form1</receiver>
+        <slot>fit()</slot>
+    </connection>
+</connections>
+<slots>
+    <slot>load_input()</slot>
+    <slot>save_input()</slot>
+    <slot>fit()</slot>
+</slots>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>

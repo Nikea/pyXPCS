@@ -21,6 +21,7 @@ var/
 *.egg-info/
 .installed.cfg
 *.egg
+doc/_build
 
 # Installer logs
 pip-log.txt
@@ -52,3 +53,9 @@ coverage.xml
 # Sphinx documentation
 docs/_build/
 
+#mac
+.DS_Store
+*~
+
+#pycharm
+.idea/

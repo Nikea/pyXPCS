@@ -1,0 +1,16 @@
+file=/buffer/tinc1/CHIARA/data_analysis/Nanotubes/IHR-May2009/PINK-Test/ea14b//ae14b_norm_flatfield_cf.dat
+xcol=1
+ycol=2
+normcol=none
+yerr=none
+range=auto
+T1=0
+T2=0
+f(x)=p0*exp(-2*(p1*x)**p2)+c0
+p0=contrast, .08
+p1=gamma, .2
+p2=beta,1
+c0=baseline,0
+
+
+
