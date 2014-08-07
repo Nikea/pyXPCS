@@ -3,7 +3,11 @@ from numpy import *
 #import EdfFile
 from some_modules_new import loadedf, saveedf, headersedf, headeredf
 import matplotlib.mlab
-from matplotlib.nxutils import points_inside_poly
+#from matplotlib.nxutils import points_inside_poly
+import matplotlib
+from matplotlib.path import Path
+import matplotlib.pyplot as plt
+from matplotlib.widgets import Cursor, Button
 import matplotlib.pylab as p
 import os.path
 from numpy.ma import masked_array
@@ -86,7 +90,8 @@ def make_mask(data_file,mask_file='none'):
            xx.append(xx[0])#xx[-1]=xx[0]
            yy.append(yy[0])#yy[-1]=yy[0]
            xy.append(xy[0])#xy[-1]=xy[0]
-           ind=points_inside_poly(points,xy).reshape(lx,ly).T
+           #ind=points_inside_poly(points,xy).reshape(lx,ly).T
+           ind=contains_path(points,xy).reshape(lx,ly).T
            mymask[ind]=1
            data=masked_array(data,mymask+automask)
            im.set_data(data)

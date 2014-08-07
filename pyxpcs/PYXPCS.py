@@ -23,7 +23,11 @@ import pylab as p
 from time import sleep
 from chi4_chiara import chi4
 from numpy.ma import masked_array
-from matplotlib.nxutils import points_inside_poly
+#from matplotlib.nxutils import points_inside_poly
+import matplotlib
+#from matplotlib.nxutils import points_inside_poly
+from matplotlib.path import Path
+from matplotlib.widgets import Cursor, Button
 
 try:
     _fromUtf8 = QtCore.QString.fromUtf8
