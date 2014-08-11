@@ -1,4 +1,5 @@
 #function to save and read compressed edf for TRC
+# Licensed as BSD by Yuriy Chushkin of the ESRF on 2014-08-06
 ################################################################################
 # Copyright (c) 2014, the European Synchrotron Radiation Facility              #
 # All rights reserved.                                                         #
