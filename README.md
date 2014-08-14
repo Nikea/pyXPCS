@@ -5,4 +5,4 @@ Python implementation of 1- and 2-time correlation in X-Ray Photon Correlation S
 
 Codebase written by Yuriy Chushkin at the ESRF
 
-This software is licensed under BSD, see LICENSE
+This software was dual-licensed to BNL under BSD on 2014-08-06, see LICENSE
